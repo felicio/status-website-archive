@@ -1,0 +1,8 @@
+**/dist
+**/node_modules
+**/protos
+**/proto
+**/coverage
+**/storybook-static
+**/examples
+**/packages/status-react
