@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 import * as Accordion from '@radix-ui/react-accordion'
-import { Text } from '@status-im/components'
-import { ChevronRightIcon, ExternalIcon } from '@status-im/icons'
+import { Text } from '@felicio/components'
+import { ChevronRightIcon, ExternalIcon } from '@felicio/icons'
 
 import { LINKS } from '@/config/links'
 
