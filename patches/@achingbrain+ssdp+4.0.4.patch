@@ -1,0 +1,16 @@
+diff --git a/node_modules/@achingbrain/ssdp/dist/src/default-ssdp-options.js b/node_modules/@achingbrain/ssdp/dist/src/default-ssdp-options.js
+index 41ac65e..f30109b 100644
+--- a/node_modules/@achingbrain/ssdp/dist/src/default-ssdp-options.js
++++ b/node_modules/@achingbrain/ssdp/dist/src/default-ssdp-options.js
+@@ -1,10 +1,7 @@
+ import { webcrypto as crypto } from 'crypto'; // remove when having crypto global
+-import { createRequire } from 'module';
+ import mergeOptions from 'merge-options';
+ import { defaultSocketOptions } from './default-socket-options.js';
+-const req = createRequire(import.meta.url);
+-const { name, version } = req('../../package.json');
+-const DEFAULT_SSDP_SIGNATURE = `node.js/${process.version.substring(1)} UPnP/1.1 ${name}/${version}`;
++const DEFAULT_SSDP_SIGNATURE = `node.js/${process.version.substring(1)} UPnP/1.1 @achingbrain/ssdp/4.0.4`;
+ export function defaultSsdpOptions(options) {
+     return mergeOptions(options ?? {}, {
+         usn: `uuid:${crypto.randomUUID()}`,

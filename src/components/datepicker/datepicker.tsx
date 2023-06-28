@@ -1,10 +1,9 @@
-import { Calendar } from '@felicio/components/src/calendar/calendar'
-import { Popover } from '@felicio/components/src/popover'
+import { Calendar, Popover } from '@felicio/components'
 import { EditIcon } from '@felicio/icons'
 
 import { formatDate } from '../chart/utils/format-time'
 
-import type { DateRange } from '@felicio/components/src/calendar/calendar'
+import type { DateRange } from '@felicio/components'
 
 type Props = {
   selected?: DateRange

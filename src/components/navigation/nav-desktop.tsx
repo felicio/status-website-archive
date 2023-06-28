@@ -1,6 +1,6 @@
-import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import { Button, Text } from '@felicio/components'
 import { DownloadIcon, ExternalIcon } from '@felicio/icons'
+import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import { cx } from 'class-variance-authority'
 
 import { Logo } from '@/components/logo'
