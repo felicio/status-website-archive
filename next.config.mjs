@@ -37,12 +37,19 @@ let config = {
     'react-native-web',
     // 'expo-modules-core',
     'expo-blur',
-    // '@felicio/components',
-    // '@felicio/js',
+    '@felicio/icons',
+    '@felicio/components',
+    '@felicio/js',
+    // '@achingbrain/nat-port-mapper',
+    // 'js-waku',
+    // 'libp2p',
   ],
   experimental: {
     legacyBrowsers: false,
-    // esmExternals: 'loose',
+    // todo?: remove; works without it
+    esmExternals: 'loose',
+    // esmExternals: false,
+    // esmExternals: true,
   },
 }
 
