@@ -22,6 +22,16 @@ let config = {
   images: {
     // disableStaticImages: true,
   },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        '@achingbrain/nat-port-mapper': false,
+      }
+    }
+
+    return config
+  },
   transpilePackages: [
     // 'react-native',
     'react-native-web',
