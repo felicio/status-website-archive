@@ -41,7 +41,6 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@achingbrain/ssdp": "^4.0.1",
     "@felicio/eslint-config": "^0.1.4",
     "@tailwindcss/typography": "^0.5.9",
     "@tamagui/next-plugin": "1.11.1",
